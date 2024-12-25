@@ -9,3 +9,11 @@ export const BRAND_LOGO = [
     'brand8',
     'brand9'
 ];
+
+export const LINKS = {
+    'Company': ['Who are we'],
+    'Resources': ['Blog'],
+    'Work': ['Video', 'Shot', 'Post'],
+    'Services': ['Video', 'Shot', 'Post'],
+    'Contact': ['Talk to us', 'Collab']
+};

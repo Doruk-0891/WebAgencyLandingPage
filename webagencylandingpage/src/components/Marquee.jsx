@@ -1,11 +1,11 @@
 import Marquee from 'react-fast-marquee';
 
-const MarqueeComponent = ({children}) => {
+const MarqueeComponent = ({ children }) => {
   return (
     <div>
-        <Marquee autoFill>
-            {children}
-        </Marquee>
+      <Marquee autoFill pauseOnClick>
+        {children}
+      </Marquee>
     </div>
   )
 }
