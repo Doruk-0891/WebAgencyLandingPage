@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Everett';
+  src: url("/fonts/TWKEverett-Regular.otf") format("opentype")
+}
+
+body {
+  font-family: everett;
+}
