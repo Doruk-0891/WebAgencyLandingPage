@@ -6,13 +6,13 @@ import ReelThumbnail from '../assets/Reel.png';
 
 const Hero = () => {
     return (
-        <section className="w-full">
+        <section className="w-full mb-16">
             <div className="text-black-400 text-3xl md:text-6xl font-bold uppercase py-6">
                 <h1 className="py-1 md:py-3">We are a</h1>
                 <h1 className="py-1 md:py-3">Global <span className="text-red-400">Production</span></h1>
                 <h1 className="py-1 md:py-3">Agency</h1>
             </div>
-            <div className="flex items-end">
+            <div className="md:flex items-end space-y-3">
                 <div className="space-y-3 basis-2/3">
                     <p>
                         Designed with the specific needs of large B2B enterprises in mind, our platform offers a comprehensive solution to simplify.
