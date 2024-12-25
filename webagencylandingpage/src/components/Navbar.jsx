@@ -62,7 +62,7 @@ const Navbar = () => {
                 <NavLink to='/work' className={`uppercase text-2xl text-center text-white hover:text-red-400 transition ease-in duration-200 ${isMenuOpen ? 'py-6' : 'invisible '}`}>Work</NavLink>
 
                 <NavLink to='/about' className={`uppercase text-2xl text-center text-white hover:text-red-400 transition ease-in duration-200 ${isMenuOpen ? 'py-6' : 'invisible'}`}>About</NavLink>
-                <div className={!isMenuOpen ? 'invisible': 'm-auto'}>
+                <div className={!isMenuOpen ? 'invisible' : 'm-auto'}>
                     <PrimaryButton>
                         Get Started
                     </PrimaryButton>
