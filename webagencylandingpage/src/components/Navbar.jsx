@@ -33,7 +33,9 @@ const Navbar = () => {
                     </button>
                     <nav className="hidden w-full justify-between gap-4 md:flex">
                         <NavLink to='/services' className={`uppercase flex justify-center items-center gap-1 
-                        ${!checkActiveMenuTab('services') && 'opacity-60'}`}>
+                        ${!checkActiveMenuTab('services') && 'opacity-60'} 
+                        relative overflow-hidden
+                        before:absolute before:bottom-0 before:w-[100%] before:h-1 before:bg-red-400 before:translate-x-[-100%] before:transition-transform ease-in-out duration-200 hover:before:translate-x-0`}>
                             Services
                             {
                                 checkActiveMenuTab('services') ? <GoArrowDownRight color="red" /> : <GoArrowUpRight />
@@ -41,12 +43,19 @@ const Navbar = () => {
                         </NavLink>
 
                         <NavLink to='/work' className={`uppercase flex justify-center items-center gap-1 
-                        ${!checkActiveMenuTab('work') && 'opacity-60'}`}>
+                        ${!checkActiveMenuTab('work') && 'opacity-60'}
+                        relative overflow-hidden
+                        before:absolute before:bottom-0 before:w-[100%] before:h-1 before:bg-red-400 before:translate-x-[-100%] before:transition-transform ease-in-out duration-200 hover:before:translate-x-0
+                        `
+                        }>
                             Work {checkActiveMenuTab('work') ? <GoArrowDownRight color="red" /> : <GoArrowUpRight />}
                         </NavLink>
 
                         <NavLink to='/about' className={`uppercase flex justify-center items-center gap-1 
-                        ${!checkActiveMenuTab('about') && 'opacity-60'}`}>
+                        ${!checkActiveMenuTab('about') && 'opacity-60'}
+                        relative overflow-hidden
+                        before:absolute before:bottom-0 before:w-[100%] before:h-1 before:bg-red-400 before:translate-x-[-100%] before:transition-transform ease-in-out duration-200 hover:before:translate-x-0
+                        `}>
                             About {checkActiveMenuTab('about') ? <GoArrowDownRight color="red" /> : <GoArrowUpRight />}
                         </NavLink>
                         <PrimaryButton>
