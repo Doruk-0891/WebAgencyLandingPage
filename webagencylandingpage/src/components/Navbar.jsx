@@ -1,7 +1,7 @@
 import Logo from "./Logo";
 import { GoArrowUpRight, GoArrowDownRight } from "react-icons/go";
 import { CiMenuFries } from "react-icons/ci";
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import { PrimaryButton } from "./Button";
@@ -24,7 +24,9 @@ const Navbar = () => {
     return (
         <header className="md:w-[80%] md:m-auto px-4 md:px-0">
             <div className="w-full flex justify-between items-center p-4 h-[75px]">
-                <Logo />
+                <Link to='/'>
+                    <Logo />
+                </Link>
                 <div className="flex justify-end">
                     <button onClick={toggleMenu} className="rounded-full p-2 hover:bg-gray-300 md:hidden">
                         {
