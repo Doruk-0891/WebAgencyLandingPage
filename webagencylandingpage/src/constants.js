@@ -65,3 +65,27 @@ export const QUESTIONS = [
         ans: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor vitae porro error ad, magni quibusdam aliquam quasi ipsam maxime natus recusandae culpa dicta, explicabo consequuntur neque quis nihil laboriosam quaerat?'
     },
 ];
+
+export const TESTIMONIALS = [
+    {
+        image: 'src/assets/Testimonial1.png',
+        description: 'Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled',
+        name: 'Lissa Smith',
+        title: 'vymo',
+        designation: 'Director of Marketing and Communications'
+    },
+    {
+        image: 'src/assets/value1.png',
+        description: 'Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry standard dummy',
+        name: 'Smith',
+        title: 'vymo',
+        designation: 'Director of Marketing and Communications'
+    },
+    {
+        image: 'src/assets/Testimonial1.png',
+        description: 'Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry standard dummy  text ever since the 1500s, when an unknown printer took a galley of  type and scrambled',
+        name: 'Lissa Smith',
+        title: 'vymo',
+        designation: 'Director of Marketing and Communications'
+    },
+];

@@ -9,6 +9,8 @@ const TaglineLazyComponent = lazy(() => import("../components/Tagline"));
 const FooterLazyComponent = lazy(() => import("../components/Footer"));
 const CallToActionLazyComponent = lazy(() => import("../components/CallToAction"));
 const FAQLazyComponent = lazy(() => import("../components/FAQ"));
+const TestimonialLazyComponent = lazy(() => import("../components/Testimonial"))
+const CountLazyComponent = lazy(() => import("../components/Counts"));
 
 const AboutPage = () => {
     const tagline = 'Unleash Visual Impact |';
@@ -18,6 +20,8 @@ const AboutPage = () => {
                 <HeroLazyComponent />
                 <BrandsLazyComponent />
                 <ValuesLazyComponent values={VALUES} />
+                <CountLazyComponent />
+                <TestimonialLazyComponent />
                 <FAQLazyComponent faqList={QUESTIONS} />
                 <CallToActionLazyComponent />
                 <TaglineLazyComponent title={tagline} />

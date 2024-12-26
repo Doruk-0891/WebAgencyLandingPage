@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <header className="md:w-[80%] md:m-auto px-4 md:px-0">
-            <div className="w-full flex justify-between items-center p-4 h-[50px]">
+            <div className="w-full flex justify-between items-center p-4 h-[75px]">
                 <Logo />
                 <div className="flex justify-end">
                     <button onClick={toggleMenu} className="rounded-full p-2 hover:bg-gray-300 md:hidden">
@@ -64,17 +64,20 @@ const Navbar = () => {
                     </nav>
                 </div>
             </div>
-            <nav className={`w-full flex flex-col bg-black-400 z-30 absolute
-            top-[50px] left-0 transition-all ease-in-out duration-200 md:hidden ${isMenuOpen ? 'h-4/6 p-2' : 'h-0 p-0'}`} onClick={toggleMenu}>
+            <nav className={`w-full flex flex-col bg-black-400 z-100 absolute
+            top-[75px] left-0 transition-all ease-in-out duration-200 md:hidden ${isMenuOpen ? 'h-3/6 p-2' : 'h-0 p-0'}`} onClick={toggleMenu}>
                 <NavLink to='/services' className={`uppercase text-2xl text-center text-white hover:text-red-400 transition ease-in duration-200 ${isMenuOpen ? 'py-6' : 'invisible '}`}>Services</NavLink>
 
                 <NavLink to='/work' className={`uppercase text-2xl text-center text-white hover:text-red-400 transition ease-in duration-200 ${isMenuOpen ? 'py-6' : 'invisible '}`}>Work</NavLink>
 
                 <NavLink to='/about' className={`uppercase text-2xl text-center text-white hover:text-red-400 transition ease-in duration-200 ${isMenuOpen ? 'py-6' : 'invisible'}`}>About</NavLink>
                 <div className={!isMenuOpen ? 'invisible' : 'm-auto'}>
-                    <PrimaryButton>
-                        Get Started
-                    </PrimaryButton>
+                    {
+                        isMenuOpen &&
+                        <PrimaryButton>
+                            Get Started
+                        </PrimaryButton>
+                    }
                 </div>
             </nav>
         </header>

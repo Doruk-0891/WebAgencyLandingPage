@@ -1,19 +1,19 @@
-import { IoIosArrowDown , IoIosArrowUp} from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Accordion from "./Accordion"
 import { useState } from "react"
 
 const FAQ = (props) => {
     const { faqList } = props;
-    const [menuOpen, setMenuOpen] =  useState({isOpen: false, index: null});
+    const [menuOpen, setMenuOpen] = useState({ isOpen: false, index: null });
 
     const handleMenuOpen = (menuIndex) => {
-        setMenuOpen(prev => ({...prev, isOpen: !prev.isOpen, index: menuIndex}));
+        setMenuOpen(prev => ({ ...prev, isOpen: !prev.isOpen, index: menuIndex }));
     }
 
     return (
         <section className="md:w-[80%] md:mx-auto px-4 md:px-0 mb-16 md:flex">
             <div className="basis-1/2">
-                <h2 className="text-3xl text-center md:text-start md:text-5xl">Frequently asked questions</h2>
+                <h2 className="text-3xl md:w-2/3 text-center md:text-start md:text-5xl">Frequently asked questions</h2>
             </div>
             <div className="basis-1/2">
                 <Accordion>
@@ -27,8 +27,8 @@ const FAQ = (props) => {
                                         </span>
                                         <span>
                                             {
-                                            menuOpen.index === idx && menuOpen.isOpen ? <IoIosArrowUp /> : 
-                                            <IoIosArrowDown />
+                                                menuOpen.index === idx && menuOpen.isOpen ? <IoIosArrowUp /> :
+                                                    <IoIosArrowDown />
                                             }
                                         </span>
                                     </div>

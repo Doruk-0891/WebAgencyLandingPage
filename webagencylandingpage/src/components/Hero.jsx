@@ -8,7 +8,7 @@ const Hero = () => {
     return (
         <section className="md:w-[80%] md:m-auto px-4 md:px-0">
             <section className="w-full mb-16">
-                <div className="text-black-400 text-6xl text-center md:text-start md:text-8xl font-bold uppercase py-6">
+                <div className="text-black-400 text-5xl xs:text-4xl text-center md:text-start md:text-8xl font-bold uppercase py-6">
                     <h1 className="py-1 md:py-3">We are a</h1>
                     <h1 className="py-1 md:py-3">Global <span className="text-red-400">Production</span></h1>
                     <h1 className="py-1 md:py-3">Agency</h1>
