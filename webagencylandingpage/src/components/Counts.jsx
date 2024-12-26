@@ -1,3 +1,5 @@
+import AnimatedCounter from "./AnimatedCounter"
+
 const Counts = () => {
     return (
         <section className="md:w-[80%] md:mx-auto px-4 mb-16 md:px-0">
@@ -8,7 +10,8 @@ const Counts = () => {
             <div className="flex flex-wrap md:flex-nowrap flex-col items-center md:items-start md:justify-between md:flex-row">
                 <div className="p-2">
                     <p className="font-bold text-4xl lg:text-6xl pb-2 text-center md:text-start">
-                        60 <span className="text-red-400">+</span>
+                        <AnimatedCounter from={30} to={60} />
+                        <span className="text-red-400">+</span>
                     </p>
                     <p className="text-lg lg:text-2xl">
                         brands partnered with
@@ -17,7 +20,8 @@ const Counts = () => {
 
                 <div className="p-2">
                     <p className="font-bold text-4xl lg:text-6xl pb-2 text-center md:text-start">
-                        3K <span className="text-red-400">+</span>
+                        <AnimatedCounter from={0} to={3} />K
+                        <span className="text-red-400">+</span>
                     </p>
                     <p className="text-lg lg:text-2xl">
                         brands content assets created
@@ -26,7 +30,8 @@ const Counts = () => {
 
                 <div className="p-2">
                     <p className="font-bold text-4xl lg:text-6xl pb-2 text-center md:text-start">
-                        1K <span className="text-red-400">+</span>
+                        <AnimatedCounter from={0} to={1} />K 
+                        <span className="text-red-400">+</span>
                     </p>
                     <p className="text-lg lg:text-2xl">
                         global partners and collaborators
@@ -35,7 +40,8 @@ const Counts = () => {
 
                 <div className="p-2">
                     <p className="font-bold text-4xl lg:text-6xl pb-2 text-center md:text-start">
-                        100 <span className="text-red-400">+</span>
+                        <AnimatedCounter from={50} to={100} />
+                        <span className="text-red-400">+</span>
                     </p>
                     <p className="text-lg lg:text-2xl">
                         cities wordwide

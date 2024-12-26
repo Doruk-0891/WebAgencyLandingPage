@@ -1,17 +1,57 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { PrimaryButton } from "./Button";
+import { motion } from 'framer-motion';
 import Person1 from '/assets/person1.png';
 import Person2 from '/assets/person2.png';
 import ReelThumbnail from '/assets/Reel.png';
+import splitStringUsingRegex from "../utils";
+
+const charVariants = {
+    hidden: { opacity: 0 },
+    reveal: { opacity: 1 }
+};
 
 const Hero = () => {
+    const headingCharsSet1 = splitStringUsingRegex('WE ARE A');
+    const headingCharsSet2 = splitStringUsingRegex('GLOBAL');
+    const headingCharsSet3 = splitStringUsingRegex('AGENCY');
+
     return (
         <section className="md:w-[80%] md:m-auto px-4 md:px-0">
             <section className="w-full mb-16">
                 <div className="text-black-400 text-5xl text-center md:text-start md:text-8xl font-bold uppercase py-6">
-                    <h1 className="py-1 md:py-3">We are a</h1>
-                    <h1 className="py-1 md:py-3">Global <span className="text-red-400">Production</span></h1>
-                    <h1 className="py-1 md:py-3">Agency</h1>
+                    <motion.h1 className="py-1 md:py-3"
+                        initial="hidden"
+                        whileInView="reveal"
+                        transition={{ staggerChildren: .1 }}>
+                        {
+                            headingCharsSet1.map(char => (<motion.span key={char} transition={{ duration: 0.5 }} variants={charVariants}>
+                                {char}
+                            </motion.span>))
+                        }
+                    </motion.h1>
+                    <motion.h1 className="py-1 md:py-3"
+                        initial="hidden"
+                        whileInView="reveal"
+                        transition={{ staggerChildren: .1 }}
+                    >
+                        {
+                            headingCharsSet2.map(char => (<motion.span key={char} transition={{ duration: 0.5 }} variants={charVariants}>
+                                {char}
+                            </motion.span>))
+                        }
+                        <span className="text-red-400">Production</span></motion.h1>
+                    <motion.h1 className="py-1 md:py-3"
+                        initial="hidden"
+                        whileInView="reveal"
+                        transition={{ staggerChildren: .1 }}
+                    >
+                        {
+                            headingCharsSet3.map(char => (<motion.span key={char} transition={{ duration: 0.5 }} variants={charVariants}>
+                                {char}
+                            </motion.span>))
+                        }
+                    </motion.h1>
                 </div>
                 <div className="md:flex items-end space-y-3">
                     <div className="space-y-3 basis-2/3">
@@ -21,7 +61,8 @@ const Hero = () => {
                         <div className="flex flex-col md:flex-row gap-2 relative -z-20">
                             <PrimaryButton>
                                 <div className="flex items-center gap-3 justify-center">
-                                    Get Professional Video Services <FaArrowRightLong />
+                                    Get Professional Video Services
+                                    <FaArrowRightLong />
                                 </div>
 
                             </PrimaryButton>
