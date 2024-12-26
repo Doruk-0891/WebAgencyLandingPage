@@ -18,9 +18,3 @@
 body {
   font-family: everett;
 }
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border: none;
-}
