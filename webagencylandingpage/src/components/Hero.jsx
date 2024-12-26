@@ -8,22 +8,22 @@ const Hero = () => {
     return (
         <section className="md:w-[80%] md:m-auto px-4 md:px-0">
             <section className="w-full mb-16">
-                <div className="text-black-400 text-3xl text-center md:text-start md:text-6xl font-bold uppercase py-6">
+                <div className="text-black-400 text-6xl text-center md:text-start md:text-8xl font-bold uppercase py-6">
                     <h1 className="py-1 md:py-3">We are a</h1>
                     <h1 className="py-1 md:py-3">Global <span className="text-red-400">Production</span></h1>
                     <h1 className="py-1 md:py-3">Agency</h1>
                 </div>
                 <div className="md:flex items-end space-y-3">
                     <div className="space-y-3 basis-2/3">
-                        <p>
+                        <p className="text-xl md:text-2xl">
                             Designed with the specific needs of large B2B enterprises in mind, our platform offers a comprehensive solution to simplify.
                         </p>
                         <div className="flex flex-col md:flex-row gap-2">
                             <PrimaryButton>
                                 <div className="flex items-center gap-3 justify-center">
-                                Get Professional Video Services <FaArrowRightLong />
+                                    Get Professional Video Services <FaArrowRightLong />
                                 </div>
-                                
+
                             </PrimaryButton>
                             <div className="flex justify-center">
                                 <div className="flex items-center">

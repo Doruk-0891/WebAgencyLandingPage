@@ -24,7 +24,7 @@ const Form = () => {
 
     return (
         <div className="w-full">
-            <h4 className="text-center py-2">Give us few details and we&apos;ll get in touch</h4>
+            <h4 className="text-center py-2 md:text-2xl">Give us few details and we&apos;ll get in touch</h4>
             <form onSubmit={handleSubmit} className="flex flex-col justify-center">
                 <input type="text" placeholder='Name*' required value={name} onChange={(e) => setName(e.target.value)} className="w-full outline-none border-b-2 border-black-400 border-opacity-40 text-black-400 p-2 mb-2" />
 
