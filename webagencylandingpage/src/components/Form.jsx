@@ -3,11 +3,11 @@ import { PrimaryButton } from './Button';
 import { useState } from "react";
 
 const Form = () => {
-    const [name, setName] = useState(null);
-    const [companyName, setCompanyName] = useState(null);
-    const [email, setEmail] = useState(null);
-    const [phone, setPhone] = useState(null);
-    const [message, setMessage] = useState(null);
+    const [name, setName] = useState('');
+    const [companyName, setCompanyName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -15,11 +15,11 @@ const Form = () => {
     }
 
     const resetForm = () => {
-        setName(null);
-        setCompanyName(null);
-        setEmail(null);
-        setPhone(null);
-        setMessage(null);
+        setName('');
+        setCompanyName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
     }
 
     return (

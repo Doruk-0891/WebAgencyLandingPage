@@ -28,10 +28,10 @@ const Hero = () => {
                             <div className="flex justify-center">
                                 <div className="flex items-center">
                                     <div className="rounded-full overflow-hidden w-10">
-                                        <img src={Person1} alt='Marin' className="w-full object-cover" />
+                                        <img src={Person1} alt='Marin' className="w-full object-cover" loading="lazy" />
                                     </div>
                                     <div className="rounded-full -translate-x-2 overflow-hidden w-10">
-                                        <img src={Person2} alt='Ayesha' />
+                                        <img src={Person2} alt='Ayesha' loading="lazy" />
                                     </div>
                                 </div>
                                 <div className="flex flex-col justify-center">
@@ -43,7 +43,7 @@ const Hero = () => {
                     </div>
                     <div className="basis-1/3 flex justify-center md:justify-end">
                         <div className="w-2/3">
-                            <img src={ReelThumbnail} alt="reel thumbnail" className="w-full h-full" />
+                            <img src={ReelThumbnail} alt="reel thumbnail" className="w-full h-full" loading="lazy" />
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* // @tailwind base;
+// @tailwind components;
+// @tailwind utilities; */
+
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import url("./components/Loader/Loader.css");
+
 @font-face {
   font-family: 'Everett';
   src: url("/fonts/TWKEverett-Regular.otf") format("opentype")
