@@ -22,7 +22,7 @@ const AccordionWithImage = (props) => {
                     {values.map((item, idx) => (
                         <div key={idx} onClick={() => handleSelection(idx)}>
 
-                            {selectedTab !== idx && <div className="p-3">{item['title']}</div>}
+                            {selectedTab !== idx && <div className="p-3 opacity-50">{item['title']}</div>}
 
                             <div className={`grid overflow-hidden transition-all duration-300 ease-in-out ${selectedTab === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
 

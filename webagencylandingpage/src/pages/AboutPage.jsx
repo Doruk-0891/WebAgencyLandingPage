@@ -1,5 +1,5 @@
 import Loader from "../components/Loader/Loader"
-import { LINKS, VALUES } from "../constants"
+import { LINKS, QUESTIONS, VALUES } from "../constants"
 import { lazy, Suspense } from "react"
 
 const HeroLazyComponent = lazy(() => import("../components/Hero"));
@@ -8,6 +8,7 @@ const ValuesLazyComponent = lazy(() => import("../components/Values"));
 const TaglineLazyComponent = lazy(() => import("../components/Tagline"));
 const FooterLazyComponent = lazy(() => import("../components/Footer"));
 const CallToActionLazyComponent = lazy(() => import("../components/CallToAction"));
+const FAQLazyComponent = lazy(() => import("../components/FAQ"));
 
 const AboutPage = () => {
     const tagline = 'Unleash Visual Impact |';
@@ -17,6 +18,7 @@ const AboutPage = () => {
                 <HeroLazyComponent />
                 <BrandsLazyComponent />
                 <ValuesLazyComponent values={VALUES} />
+                <FAQLazyComponent faqList={QUESTIONS} />
                 <CallToActionLazyComponent />
                 <TaglineLazyComponent title={tagline} />
                 <FooterLazyComponent links={LINKS} />
