@@ -7,7 +7,7 @@ const Testimonial = () => {
       <h3 className="font-bold uppercase text-xl flex overflow-hidden py-2 gap-2 text-red-400 justify-center md:justify-start">
         <div className="text-transparent w-8 border-b-2 border-red-400 h-4">-</div> TESTIMONY FROM OUR PARTNERS
       </h3>
-      <div className="w-full h-[400px]">
+      <div className="w-full md:h-[400px]">
         <CarouselComponent slides={TESTIMONIALS} />
       </div>
     </section>

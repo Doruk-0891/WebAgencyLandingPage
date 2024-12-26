@@ -7,7 +7,7 @@ const Brands = () => {
       <MarqueeComponent>
         {
           BRAND_LOGO.map(item => (
-            <img src={`src/assets/${item}.png`} alt={item} key={item} className="px-4" loading="lazy" />
+            <img src={`/assets/${item}.png`} alt={item} key={item} className="px-4" loading="lazy" />
           ))
         }
       </MarqueeComponent>

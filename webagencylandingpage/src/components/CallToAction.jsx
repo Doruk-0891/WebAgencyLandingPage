@@ -1,18 +1,6 @@
 import Cards from "./Cards";
 import Form from "./Form";
-
-const CALL_TO_ACTION_DETAILS = [
-    {
-        image: 'src/assets/person1.png',
-        description: "All-round advertising go to lady. Has a thing for stories: she calls this the side effect of a life lived with plot twists.",
-        title: "Milly Cyrus, Global Lead"
-    },
-    {
-        image: 'src/assets/person2.png',
-        description: "All-round advertising go to lady. Has a thing for stories: she calls this the side effect of a life lived with plot twists.",
-        title: "Vinita Singh, Asst. Global Lead"
-    }
-];
+import { CALL_TO_ACTION_DETAILS } from "../constants";
 
 const CallToAction = () => {
     return (

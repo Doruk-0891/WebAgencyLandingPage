@@ -1,8 +1,8 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { PrimaryButton } from "./Button";
-import Person1 from '../assets/person1.png';
-import Person2 from '../assets/person2.png';
-import ReelThumbnail from '../assets/Reel.png';
+import Person1 from '/assets/person1.png';
+import Person2 from '/assets/person2.png';
+import ReelThumbnail from '/assets/Reel.png';
 
 const Hero = () => {
     return (

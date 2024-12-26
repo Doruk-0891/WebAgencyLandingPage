@@ -13,7 +13,7 @@ const AccordionWithImage = (props) => {
 
         <div className="w-full h-full flex flex-col md:flex-row justify-center items-center">
             <div className="basis-1/2">
-                <div className="p-3 w-2/3 h-2/3">
+                <div className="p-3 w-2/3 h-2/3 m-auto">
                     <img src={values[selectedTab]['image']} alt={values[selectedTab]['title']} className="object-cover w-full h-full" />
                 </div>
             </div>
