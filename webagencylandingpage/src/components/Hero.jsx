@@ -19,7 +19,7 @@ const Hero = () => {
     return (
         <section className="md:w-[80%] md:m-auto px-4 md:px-0">
             <section className="w-full mb-16">
-                <div className="text-black-400 text-5xl text-center md:text-start md:text-8xl font-bold uppercase py-6">
+                <div className="text-black-400 text-5xl text-center md:text-start lg:text-8xl font-bold uppercase py-6">
                     <motion.h1 className="py-1 md:py-3"
                         initial="hidden"
                         whileInView="reveal"
@@ -30,7 +30,7 @@ const Hero = () => {
                             </motion.span>))
                         }
                     </motion.h1>
-                    <motion.h1 className="py-1 md:py-3"
+                    <motion.h1 className="py-1 md:py-3 flex flex-wrap justify-center md:justify-start"
                         initial="hidden"
                         whileInView="reveal"
                         transition={{ staggerChildren: .1 }}
@@ -58,13 +58,12 @@ const Hero = () => {
                         <p className="text-xl md:text-2xl">
                             Designed with the specific needs of large B2B enterprises in mind, our platform offers a comprehensive solution to simplify.
                         </p>
-                        <div className="flex flex-col md:flex-row gap-2 relative -z-20">
+                        <div className="flex flex-col md:flex-row gap-2 relative -z-10">
                             <PrimaryButton>
                                 <div className="flex items-center gap-3 justify-center">
                                     Get Professional Video Services
                                     <FaArrowRightLong />
                                 </div>
-
                             </PrimaryButton>
                             <div className="flex justify-center">
                                 <div className="flex items-center">

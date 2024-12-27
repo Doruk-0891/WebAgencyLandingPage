@@ -13,7 +13,6 @@ const CarouselComponent = (props) => {
                 initialSlide={0}
                 slidesPerView={1}
                 modules={[Navigation]}
-                navigation
                 allowTouchMove
                 className='h-full'
             >
